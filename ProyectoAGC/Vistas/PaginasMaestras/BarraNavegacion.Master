@@ -103,7 +103,7 @@
                 <div class="row justify-content-between">
 
                     <div class="col-4 ">
-                        <img src="../Estilos/Recursos/LOGO CUBO.png" alt="Logo Footer" class="Logo justify-content-start" />
+                        <asp:Image runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGO CUBO.png" alt="Logo Footer" class="Logo justify-content-start" />
                     </div>
                     <div class="col-4">
                         <p class="text text-center">
