@@ -1,6 +1,7 @@
 
 LA RAMA -->[Main] ES LA RAMA DEFAULT
 Contraseña de la base de datos compartida ---> &ccai$2022#
+Servidor general --> 192.168.7.171
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
