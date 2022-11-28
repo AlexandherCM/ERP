@@ -1,0 +1,116 @@
+﻿/*
+    Paleta de colores
+    Verde Agua:
+    #0f777e
+    Gris:
+    #d4d3d0
+    Naranja:
+    #fe9902
+    Blanco:
+    #fbfbfb
+    Gris 2:
+    #97aaa8
+*/
+
+
+/*Head*/
+
+.nav {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: aliceblue
+}
+
+/* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
+#barraInicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .2%;
+    padding: .6%;
+}
+
+#IconoSalir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: .8%;
+}
+
+    #IconoSalir:hover {
+        opacity: .5;
+    }
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .redes i {
+        padding-right: 15px;
+    }
+
+.NumLlamada {
+    position: absolute;
+    top: 10px
+}
+
+#TelLocal {
+    margin-left: 135px;
+}
+
+#CuboAGC2 {
+    margin-left: 50%;
+}
+
+/* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
+/*Cuerpo*/
+
+.Drop {
+    border-radius: 8px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.Logo {
+    width: 8em;
+    height: 7em;
+    position: relative;
+    top: 0.8em;
+}
+
+.text, a {
+    color: aliceblue;
+    position: relative;
+    font-family: Bahnschrift;
+    font-size: 11px;
+}
+
+/*Pie de pagina*/
+footer {
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+    padding-top: .2%;
+}
+
+.fa-facebook, .fa-instagram {
+    color: aliceblue;
+    font-size: 2.5em;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 9px;
+}
+
+/*Hover*/
+
+i:hover {
+    color: #fe9902;
+}

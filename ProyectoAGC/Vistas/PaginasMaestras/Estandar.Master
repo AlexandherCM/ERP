@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Estandar.master.cs" Inherits="ProyectoAGC.Vistas.PaginasMaestras.Estandar" %>
+
+<!DOCTYPE html>
+    
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%-- PENDIENTE --%>
+    <script src="https://kit.fontawesome.com/8ecd014e5f.js" crossorigin="anonymous"></script>
+    <%-- PENDIENTE --%>
+    <link href="../Estilos/EstiloMaster.css" rel="stylesheet" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+
+    <%-- LINKS DE LAS PÁGINAS VINCULADAS --%>
+    <link href="../Estilos/Men.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%-- Contenido --%>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <ul id="barraInicio">
+                    <li>
+                        <a href="#" class="navbar-brand" id="NombreImagen">
+                            <font>AGC COMERCIAL</font>
+                            <asp:Image ID="CuboAGC" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGO CUBO.png" alt="Logo" Width="80" Height="60" />
+                        </a>
+                    </li>
+                    <li id="IconoSalir">
+                        <asp:ImageButton ID="LogOut" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/Power.png" OnClick="LogOut_Click" />
+                        <a href="#" class="navbar-brand">
+                            <font>CERRAR SESIÓN</font>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            --%>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <%-- Footer  --%>
+            <footer class="container-fluid bg-dark">
+                <div class="row justify-content-between">
+
+                    <div class="col-4 ">
+                        <asp:Image runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGO CUBO.png" alt="Logo Footer" class="Logo justify-content-start" />
+                    </div>
+                    <div class="col-4">
+                        <p class="text text-center">
+                            <br />
+                            Priv. Héroes de Nacozari s/n, Ozumbilla,Tecámac, Santa María
+                     
+                          <br />
+                            Ozumbilla, C.P.55760, Edo. Méx. 
+                     
+                        </p>
+                        <div class="row  text-center justify-content-center">
+                            <div class="col">
+                                <p class="text"><i class="fa-solid fa-phone"></i> 55-6235-1766</p>
+                            </div>
+                            <div class="col ">
+                                <p class="text"><i class="fa-brands fa-whatsapp"></i> 779 102 3377</p>
+                            </div>
+                            <div class="row  text-center">
+                                <p class="text">Derechos Reservados- AGC Comercial &copy 2022</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 align-self-center">
+
+                        <div class="row justify-content-center align-content-center align-self-center">
+                            <div class="col align-self-center">
+                                <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/agccomercialequipamiento" style="list-style: none; text-decoration: none; color: aliceblue"> @agccomercialequipamiento </a></i>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row justify-content-center align-content-center align-self-center">
+                            <div class="col align-self-center">
+                                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/agc.comercial/" style="list-style: none; text-decoration: none; color: aliceblue; margin-right:10px"> @agccomercial </a></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </form>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+</body>
+</html>

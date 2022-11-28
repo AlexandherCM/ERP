@@ -1,0 +1,55 @@
+﻿.Fondo {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.649) ), url(Recursos/brick-wall.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    color: aliceblue;
+}
+
+.fa-arrow-left {
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin-left: 0.5em;
+}
+
+    .fa-arrow-left:hover {
+        color: #fe9902;
+    }
+
+.From {
+    border-radius: 10px;
+    background: #fe9902;
+    border-style: solid;
+}
+
+.mensajes {
+    height: auto;
+}
+
+.TextBox {
+    width: 85%;
+    border: none;
+    border-radius: 3px;
+    margin-right: 14%;
+    text-align: center;
+}
+
+.color {
+    background-color: transparent;
+}
+
+.btn{
+    background:aliceblue;
+    font-size:2.5vh;
+}
+
+.btn:hover {
+    background: #0f777e;
+    color: aliceblue;
+}

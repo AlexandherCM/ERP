@@ -1,0 +1,42 @@
+﻿.Fondo {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.649) ), url(Recursos/MenuFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.btn {
+    background: #0f777e;
+    color: aliceblue;
+}
+    .btn:hover {
+        background: #fe9902;
+    }
+
+.fa-circle-plus {
+    color: aliceblue;
+    font-size: 4rem;
+}
+    .fa-circle-plus:hover {
+        color: #0f777e;
+    }
+
+.form-control{
+    width: 60%;
+}
+
+.Search {
+    width: 5rem;
+    height: 3rem;
+    background: #fe9902;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.textClient {
+    width:100%;
+}
+

@@ -1,0 +1,72 @@
+﻿.Fondo {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.649) ), url(Recursos/NuevaCotizacionFondo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.From {
+    background: #97aaa8;
+    border-radius: 10px;
+}
+
+.Search {
+    width: 4.5rem;
+    height: 2.5rem;
+    background: #fe9902;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.textProducto {
+    width: 80%;
+}
+
+.texto {
+    width: 67%;
+    margin-right: 23vh;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border-style: solid;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#cantidad{
+    width: 67%;
+    margin-right: 23vh;
+    border-radius: 15px;
+}
+.Agregar {
+    width: 12vh;
+    height: 10vh;
+    padding: 20px;
+    border-radius: 50%;
+    background: #fe9902;
+}
+    .Agregar:hover {
+        background: #0f777e;
+    }
+
+.fa-table, .fa-circle-plus {
+    color: #0f777e;
+    font-size: 3.5rem;
+}
+
+    .fa-table:hover, .fa-circle-plus:hover {
+        color: #fe9902;
+    }
+/*.aceptar {
+    width: 6rem;
+    height: 4rem;
+    margin-bottom: 5vh;
+}
+
+.btn{
+    width:5rem;
+    height:4rem;
+}*/
