@@ -20,6 +20,9 @@ namespace ProyectoAGC
 
             //RouteTable.Routes.MapPageRoute("NCotizacion", "nCotizacion", "~/Vistas/Paginas/NuevaCotizacion.aspx");
 
+            //Modulo Catalogos
+            RouteTable.Routes.MapPageRoute("GuardarCliente", "GuardarCliente", "~/Vistas/Paginas/NuevoCliente.aspx");
+
 
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }

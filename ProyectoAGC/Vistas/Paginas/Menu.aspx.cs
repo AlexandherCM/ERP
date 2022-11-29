@@ -39,5 +39,15 @@ namespace ProyectoAGC.Vistas.Paginas
                 Response.RedirectToRoute("BorrarJWT");
             }
         }
+
+        protected void btnVentas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCatalogos_Click(object sender, EventArgs e)
+        {
+            Response.RedirectToRoute("GuardarCliente");
+        }
     }
 }

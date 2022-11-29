@@ -131,7 +131,7 @@
                     <div class="row g-3 text-center">
 
                         <div class=" align-self-center align-items-center">
-                            <asp:Button ID="btnGuardarClient" runat="server" Text="Guardar" class="btn border border-white" />
+                            <asp:Button ID="btnGuardarClient" runat="server" Text="Guardar" class="btn border border-white" OnClick="btnGuardarClient_Click" />
                         </div>
                     </div>
 
