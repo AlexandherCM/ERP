@@ -23,7 +23,7 @@ namespace ERP_Comercial.Controllers
 
         public bool AgregarUsuario(Usuario usuario)
         {
-            var NewUser = bd.Usuario.Where(c =>c.UsuarioID == usuario.UsuarioID && c.UserName == usuario.UserName && c.Correo == usuario.Correo && c.Contraseña == usuario.Contraseña).FirstOrDefault();
+            var NewUser = bd.Usuario.Where(c =>c.ID == usuario.ID && c.UserName == usuario.UserName && c.Correo == usuario.Correo && c.Contraseña == usuario.Contraseña).FirstOrDefault();
 
             try
             {
@@ -53,10 +53,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<UsuarioDTO> Get(String id)
         {
             IQueryable<UsuarioDTO> Consulta = from consulta in bd.Usuario
-                                                   where consulta.UsuarioID == id
+                                                   where consulta.ID == id
                                                    select new UsuarioDTO
                                                    {
-                                                       UsuarioID = consulta.UsuarioID,
+                                                       ID = consulta.ID,
                                                        Nombre = consulta.Nombre,
                                                        UserName = consulta.UserName,
                                                        Correo = consulta.Correo,
@@ -76,7 +76,7 @@ namespace ERP_Comercial.Controllers
             IQueryable<UsuarioDTO> Consulta = from consulta in bd.Usuario
                                                    select new UsuarioDTO
                                                    {
-                                                       UsuarioID = consulta.UsuarioID,
+                                                       ID = consulta.ID,
                                                        Nombre = consulta.Nombre,
                                                        UserName = consulta.UserName,
                                                        Correo = consulta.Correo,
@@ -143,12 +143,12 @@ namespace ERP_Comercial.Controllers
             {
                 DateTime expira;
 
-                expira = DateTime.Now.AddMinutes(.25);
+                expira = DateTime.Now.AddMinutes(10);
                 Epoch epoch = new Epoch();
 
                 Dictionary<string, object> payload = new Dictionary<string, object>()
                 {
-                    {"Sub", UsuarioID.UsuarioID},
+                    {"Sub", UsuarioID.ID},
                     {"Exp", epoch.convertirEpoch(expira)},
                     {"Nbf", epoch.convertirEpoch(DateTime.Now)}
                 };
@@ -171,10 +171,10 @@ namespace ERP_Comercial.Controllers
             JSONwt usuarioJwt = JsonConvert.DeserializeObject<JSONwt>(Request.Properties["payload"].ToString());
 
             var usuarios = from consulta in bd.Usuario
-                           where consulta.UsuarioID == usuarioJwt.Sub
+                           where consulta.ID == usuarioJwt.Sub
                            select new UsuarioDTO
                            {
-                               UsuarioID = consulta.UsuarioID,
+                               ID = consulta.ID,
                                Nombre = consulta.Nombre,
                                UserName = consulta.UserName,
                                Correo = consulta.Correo,

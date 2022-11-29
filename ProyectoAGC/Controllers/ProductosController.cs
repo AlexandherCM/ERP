@@ -43,14 +43,15 @@ namespace ERP_Comercial.Controllers
         public IQueryable<ProductoDTO> Get(String id)
         {
             IQueryable<ProductoDTO> productosDTOs = from productos in bd.Producto
-                                                     where productos.ProductoID == id
+                                                     where productos.ID == id
                                                      select new ProductoDTO
                                                      {
-                                                         ProductoID = productos.ProductoID,
+                                                         ID = productos.ID,
                                                          Nombre = productos.Nombre,
                                                          Descripcion = productos.Descripcion,
                                                          Precio = productos.Precio,
-                                                         Categoria = productos.Categoria
+                                                         Categoria = productos.Categoria,
+                                                         Imgen = productos.Imgen
                                                      };
             return productosDTOs;
         }
@@ -66,7 +67,7 @@ namespace ERP_Comercial.Controllers
             IQueryable<ProductoDTO> productosDTOs = from productos in bd.Producto
                                                      select new ProductoDTO
                                                      {
-                                                         ProductoID = productos.ProductoID,
+                                                         ID = productos.ID,
                                                          Nombre = productos.Nombre,
                                                          Descripcion = productos.Descripcion,
                                                          Precio = productos.Precio,

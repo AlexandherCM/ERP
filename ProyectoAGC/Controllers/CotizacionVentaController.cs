@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<CotizacionVentaDTO> Get(String id)
         {
             IQueryable<CotizacionVentaDTO> CotizacionesDTOs = from cotizaciones in bd.Cotizacion
-                                                         where cotizaciones.Folio == id
+                                                         where cotizaciones.ID == id
                                                          select new CotizacionVentaDTO
                                                          {
-                                                             Folio = cotizaciones.Folio,
+                                                             ID = cotizaciones.ID,
                                                              RFC_Cli = cotizaciones.RFC_Cli,
                                                              IDProducto = cotizaciones.IDProducto,
                                                              IDUsuario = cotizaciones.IDUsuario,
@@ -55,7 +55,8 @@ namespace ERP_Comercial.Controllers
                                                              Precio = cotizaciones.Precio,
                                                              Total = cotizaciones.Total,
                                                              Fecha = cotizaciones.Fecha,
-                                                             Remision_FolioRemision = cotizaciones.Remision_FolioRemision
+                                                             Remision_FolioRemision = cotizaciones.Remision_FolioRemision,
+                                                             Imagen = cotizaciones.Imagen
                                                          };
             return CotizacionesDTOs;
         }

@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class Pedido
     {
         [Key]
-        public String PedidoID { get; set; }
+        public String ID { get; set; }
 
         public String RFC { get; set; }
         public virtual Proveedor Proveedor { get; set; }
@@ -26,11 +26,12 @@ namespace AGCComercial.Models
         public long ClabeBancaria { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaVencimiento { get; set; }
+        public String Imagen { get; set; }
     }
 
     public class PedidoDTO
     {
-        public String PedidoID { get; set; }
+        public String ID { get; set; }
         public String RFC { get; set; }
         public String IDProducto { get; set; }
         public String IDUsuario { get; set; }
@@ -40,5 +41,6 @@ namespace AGCComercial.Models
         public long ClabeBancaria { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaVencimiento { get; set; }
+        public String Imagen { get; set; }
     }
 }

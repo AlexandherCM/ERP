@@ -12,23 +12,24 @@ namespace AGCComercial.Models
     public class Producto
     {
         [Key]
-        public String ProductoID { get; set; }
+        public String ID { get; set; }
 
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
         public float Precio { get; set; }
         public String Categoria { get; set; }
-
+        public String Imgen { get; set; }
         public virtual List<Pedido> Pedidos { get; set; }
         public virtual List<CotizacionVenta> CotizacionVentas { get; set; }
     }
 
     public class ProductoDTO
     {
-        public String ProductoID { get; set; }
+        public String ID { get; set; }
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
         public float Precio { get; set; }
         public String Categoria { get; set; }
+        public String Imgen { get; set; }
     }
 }

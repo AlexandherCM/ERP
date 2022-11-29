@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<ClienteDTO> Get(String id)
         {
             IQueryable<ClienteDTO> clientesDTOs = from clientes in bd.Cliente
-                                                   where clientes.RFC_Cli == id
+                                                   where clientes.ID == id
                                                    select new ClienteDTO
                                                    {
-                                                       RFC_Cli = clientes.RFC_Cli,
+                                                       ID = clientes.ID,
                                                        Nombre = clientes.Nombre,
                                                        Direccion = clientes.Direccion,
                                                        Telefono = clientes.Telefono,
@@ -66,7 +66,7 @@ namespace ERP_Comercial.Controllers
             IQueryable<ClienteDTO> clientesDTOs = from clientes in bd.Cliente
                                                    select new ClienteDTO
                                                    {
-                                                       RFC_Cli = clientes.RFC_Cli,
+                                                       ID = clientes.ID,
                                                        Nombre = clientes.Nombre,
                                                        Direccion = clientes.Direccion,
                                                        Telefono = clientes.Telefono,

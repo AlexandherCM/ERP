@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class Usuario
     {
         [Key]
-        public String UsuarioID { get; set; }
+        public String ID { get; set; }
 
         public String Nombre { get; set; }
         public String UserName { get; set; }
@@ -25,7 +25,7 @@ namespace AGCComercial.Models
 
     public class UsuarioDTO
     {
-        public String UsuarioID { get; set; }
+        public String ID { get; set; }
         public String Nombre { get; set; }
         public String UserName { get; set; }
         public String Correo { get; set; }

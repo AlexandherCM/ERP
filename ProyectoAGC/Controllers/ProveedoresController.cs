@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<ProveedorDTO> Get(String id)
         {
             IQueryable<ProveedorDTO> proveedoresDTOs = from proveedores in bd.Proveedor
-                                                         where proveedores.RFC == id
+                                                         where proveedores.ID == id
                                                          select new ProveedorDTO
                                                          {
-                                                             RFC = proveedores.RFC,
+                                                             ID = proveedores.ID,
                                                              Empresa = proveedores.Empresa,
                                                              RazonSocial = proveedores.RazonSocial,
                                                              Contacto = proveedores.Contacto,
@@ -71,7 +71,7 @@ namespace ERP_Comercial.Controllers
             IQueryable<ProveedorDTO> proveedoresDTOs = from proveedores in bd.Proveedor
                                                          select new ProveedorDTO
                                                          {
-                                                             RFC = proveedores.RFC,
+                                                             ID = proveedores.ID,
                                                              Empresa = proveedores.Empresa,
                                                              RazonSocial = proveedores.RazonSocial,
                                                              Contacto = proveedores.Contacto,

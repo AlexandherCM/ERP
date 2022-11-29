@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<PedidoDTO> Get(String id)
         {
             IQueryable<PedidoDTO> pedidosDTOs = from pedidos in bd.Pedido
-                                                 where pedidos.PedidoID == id
+                                                 where pedidos.ID == id
                                                  select new PedidoDTO
                                                  {
-                                                     PedidoID = pedidos.PedidoID,
+                                                     ID = pedidos.ID,
                                                      RFC = pedidos.RFC,
                                                      IDProducto = pedidos.IDProducto,
                                                      IDUsuario = pedidos.IDUsuario,
@@ -56,6 +56,7 @@ namespace ERP_Comercial.Controllers
                                                      ClabeBancaria = pedidos.ClabeBancaria,
                                                      FechaInicio = pedidos.FechaInicio,
                                                      FechaVencimiento = pedidos.FechaVencimiento,
+                                                     Imagen = pedidos.Imagen
                                                  };
             return pedidosDTOs;
         }

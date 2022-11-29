@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class Factura
     {
         [Key]
-        public String FolioFac { get; set; }
+        public String ID { get; set; }
 
         public String FolioRemision { get; set; }
         public float PrecioUni { get; set; }
@@ -29,7 +29,7 @@ namespace AGCComercial.Models
 
     public class FacturaDTO
     {
-        public String FolioFac { get; set; }
+        public String ID { get; set; }
         public String FolioRemision { get; set; }
         public float PrecioUni { get; set; }
         public float Importe { get; set; }

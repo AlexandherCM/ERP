@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<FacturaDTO> Get(String id)
         {
             IQueryable<FacturaDTO> facturasDTOs = from facturas in bd.Factura
-                                                   where facturas.FolioFac == id
+                                                   where facturas.ID == id
                                                    select new FacturaDTO
                                                    {
-                                                       FolioFac = facturas.FolioFac,
+                                                       ID = facturas.ID,
                                                        FolioRemision = facturas.FolioRemision,
                                                        PrecioUni = facturas.PrecioUni,
                                                        Importe = facturas.Importe,

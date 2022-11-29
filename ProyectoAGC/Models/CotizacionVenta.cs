@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class CotizacionVenta
     {
         [Key]
-        public String Folio { get; set; }
+        public String ID { get; set; }
 
         public String RFC_Cli { get; set; }
         public virtual Cliente Clientes { get; set; }
@@ -26,13 +26,15 @@ namespace AGCComercial.Models
         public float Total { get; set; }
         public DateTime Fecha { get; set; }
         public string Remision_FolioRemision { get; set; }
+        public String Imagen { get; set; }
+
 
         public virtual Remision Remision { get; set; }
     }
 
     public class CotizacionVentaDTO
     {
-        public String Folio { get; set; }
+        public String ID { get; set; }
         public String RFC_Cli { get; set; }
         public String IDProducto { get; set; }
         public String IDUsuario { get; set; }
@@ -42,5 +44,6 @@ namespace AGCComercial.Models
         public float Total { get; set; }
         public DateTime Fecha { get; set; }
         public string Remision_FolioRemision { get; set; }
+        public String Imagen { get; set; }
     }
 }

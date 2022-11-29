@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class Cliente
     {
         [Key]
-        public String RFC_Cli { get; set; }
+        public String ID { get; set; }
 
         public String Nombre { get; set; }
         public String Direccion { get; set; }
@@ -24,7 +24,7 @@ namespace AGCComercial.Models
 
     public class ClienteDTO
     {
-        public string RFC_Cli { get; set; }
+        public string ID { get; set; }
 
         public string Nombre { get; set; }
 

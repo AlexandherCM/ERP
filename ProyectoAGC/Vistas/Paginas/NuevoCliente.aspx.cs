@@ -22,7 +22,7 @@ namespace ProyectoAGC.Vistas.Paginas
         {
             Cliente cliente = new Cliente()
             {
-                RFC_Cli = txtRFCClient.Text,
+                ID = txtRFCClient.Text,
                 Nombre = txtNom.Text,
                 Direccion = txtDirecClient.Text,
                 Telefono = txttelClient.Text,

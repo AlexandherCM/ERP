@@ -43,10 +43,10 @@ namespace ERP_Comercial.Controllers
         public IQueryable<RemisionDTO> Get(String id)
         {
             IQueryable<RemisionDTO> RemisionesDTOs = from Remison in bd.Remision
-                                                       where Remison.FolioRemision == id
+                                                       where Remison.ID == id
                                                        select new RemisionDTO
                                                        {
-                                                           FolioRemision = Remison.FolioRemision,
+                                                           ID = Remison.ID,
                                                            Folio = Remison.Folio,
                                                            Responsable = Remison.Responsable,
                                                            FechaEntrega = Remison.FechaEntrega,
@@ -68,7 +68,7 @@ namespace ERP_Comercial.Controllers
             IQueryable<RemisionDTO> remisionesDTOs = from remison in bd.Remision
                                                        select new RemisionDTO
                                                        {
-                                                           FolioRemision = remison.FolioRemision,
+                                                           ID = remison.ID,
                                                            Folio = remison.Folio,
                                                            Responsable = remison.Responsable,
                                                            FechaEntrega = remison.FechaEntrega,

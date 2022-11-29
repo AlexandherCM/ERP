@@ -12,7 +12,7 @@ namespace AGCComercial.Models
     public class Proveedor
     {
         [Key]
-        public String RFC { get; set; }
+        public String ID { get; set; }
         public String Empresa { get; set; }
         public String RazonSocial { get; set; }
         public String Contacto { get; set; }
@@ -28,7 +28,7 @@ namespace AGCComercial.Models
 
     public class ProveedorDTO
     {
-        public String RFC { get; set; }
+        public String ID { get; set; }
         public String Empresa { get; set; }
         public String RazonSocial { get; set; }
         public String Contacto { get; set; }
