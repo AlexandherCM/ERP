@@ -47,7 +47,7 @@ namespace ProyectoAGC.Vistas.Paginas
 
         protected void btnCatalogos_Click(object sender, EventArgs e)
         {
-            Response.RedirectToRoute("GuardarCliente");
+            Response.RedirectToRoute("NuevoCliente");
         }
     }
 }
