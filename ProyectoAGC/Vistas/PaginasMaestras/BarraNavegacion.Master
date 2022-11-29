@@ -16,6 +16,7 @@
 
     <%-- LINKS DE LAS PÁGINAS VINCULADAS --%>
     <link href="../Estilos/OrdenVenta.css" rel="stylesheet" />
+    <link href="../Estilos/NuevoCliente.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
