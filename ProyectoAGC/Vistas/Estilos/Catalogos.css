@@ -1,0 +1,21 @@
+﻿.Fondo {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.649) ), url(Recursos/brick-wall.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 86.1vh;
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    background: #0f777e;
+    color: aliceblue;
+    border-style: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.boton:hover{
+    border-style:solid;
+    border-color:aliceblue;
+}

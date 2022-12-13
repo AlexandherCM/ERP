@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: auto;
+    height: 92vh;
     display: flex;
     justify-content: center;
 }
@@ -16,7 +16,7 @@
     height: 12vh;
     padding:9px;
     border-radius:50%;
-    background: #0f777e;
+    background:aliceblue;
 }
     .AgregarCliente:hover {
         background: #fe9902;

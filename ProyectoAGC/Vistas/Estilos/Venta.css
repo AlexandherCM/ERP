@@ -1,0 +1,21 @@
+﻿.Fondo {
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.649) ), url(Recursos/VentasF.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #97aaa8;
+    background: #0f777e;
+    color: #fbfbfb;
+}
+
+.card {
+    background: #fe9902; 
+}
+

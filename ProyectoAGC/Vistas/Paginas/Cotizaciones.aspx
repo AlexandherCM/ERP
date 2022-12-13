@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Cotizaciones</title>
-    <link href="../Estilos/Cotizaciones.css" rel="stylesheet" />
+    <link href="../Estilos/cotizaciones.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="Fondo">
@@ -23,7 +23,7 @@
                                 <asp:TextBox ID="textClinete" placeholder="Cliente" Class="form-control textClient" runat="server" TextMode="Search"></asp:TextBox>
                             </div>
                             <div class="col-3 justify-content-start">
-                                <asp:ImageButton ID="btnBuscarCliente" Class="Search" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/magnifying-glass-solid.svg"  />
+                                <asp:ImageButton ID="btnBuscarCliente" Class="Search" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/magnifying-glass-solid.svg"/>
                             </div>
                         </div>
                     </div>

@@ -42,7 +42,7 @@ namespace ProyectoAGC.Vistas.Paginas
 
         protected void btnVentas_Click(object sender, EventArgs e)
         {
-
+            Response.RedirectToRoute("Ventas");
         }
 
         protected void btnCatalogos_Click(object sender, EventArgs e)

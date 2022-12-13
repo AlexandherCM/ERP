@@ -15,13 +15,26 @@
     <link href="../Estilos/Recursos/LOGO CUBO.png" rel="icon" />
 
     <%-- LINKS DE LAS PÁGINAS VINCULADAS --%>
+
+    <%-- Ventas --%>
+    <link href="../Estilos/cotizaciones.css" rel="stylesheet" />
+    <link href="../Estilos/Venta.css" rel="stylesheet" />
+    <link href="../Estilos/NCotizacion.css" rel="stylesheet" />
     <link href="../Estilos/OrdenVenta.css" rel="stylesheet" />
+    <link href="../Estilos/ProductoCotizados.css" rel="stylesheet" />
+    <%-- Catalogos --%>
+    <link href="../Estilos/Clientes.css" rel="stylesheet" />
+    <link href="../Estilos/NuevoCliente.css" rel="stylesheet" />
+    <link href="../Estilos/Productos.css" rel="stylesheet" />
+    <link href="../Estilos/Proveedores.css" rel="stylesheet" />
+     <link href="../Estilos/NuevoProducto.css" rel="stylesheet" />
+    <link href="../Estilos/NuevoProveedor.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 
-<body>
+<body class="bg-dark">
 
     <form id="form1" runat="server">
         <div>
@@ -50,40 +63,34 @@
                             <br />
                             <%-- DropDown --%>
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <asp:Button ID="btnInicio" Class="Btn mb-5 bg-dark text-light border rounded" runat="server" Text="Inicio" OnClick="btnInicio_Click"/>
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Ventas" runat="server" Class="Drop bg-dark text-light" AutoPostBack="True" OnSelectedIndexChanged="Ventas_SelectedIndexChanged">
+                                <asp:DropDownList ID="Ventas" runat="server" Class="Drop bg-dark text-light mb-5" AutoPostBack="True" OnSelectedIndexChanged="Ventas_SelectedIndexChanged">
                                     <asp:ListItem Selected="True" disabled="True"> Modulo Ventas </asp:ListItem>
-                                    <asp:ListItem Selected="False" Enabled="true" Value="CrearNuevaVenta" > Crear orden de venta</asp:ListItem>
-                                    <asp:ListItem Selected="False" Enabled="true" Value="Menu" > Inicio</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="true" Value="Ventas" >Ventas</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="true" Value="NCotizacion" >Nueva Cotizacion</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="true" Value="Orden" > Orden de venta</asp:ListItem>
                                 </asp:DropDownList>
-                                <br />
-                                <br />
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Compras" runat="server" Class="Drop bg-dark text-light" AutoPostBack="True">
+                                <asp:DropDownList ID="Compras" runat="server" Class="Drop bg-dark text-light mb-5">
                                     <asp:ListItem Selected="True" disabled="True"> Modulo Compras </asp:ListItem>
-                                    <asp:ListItem Selected="False" Enabled="true" Value="NCotizacion" >Cotización</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="true" >Pendiente</asp:ListItem>
                                     <asp:ListItem>Pendiente</asp:ListItem>
                                 </asp:DropDownList>
-                                <br />
-                                <br />
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Catalogos" runat="server" Class="Drop bg-dark text-light">
+                                <asp:DropDownList ID="Catalogos" runat="server" Class="Drop bg-dark text-light mb-5" AutoPostBack="true"  OnSelectedIndexChanged="Catalogos_SelectedIndexChanged">
                                     <asp:ListItem Selected="True" disabled="True"> Modulo Catalogos </asp:ListItem>
-                                    <asp:ListItem>Productos</asp:ListItem>
-                                    <asp:ListItem>Proveedores</asp:ListItem>
-                                    <asp:ListItem>Clientes</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="True" Value="CatalogoP"> Catalogo de productos</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="True" Value="CatalogoPro"> Catalogo de proveedores</asp:ListItem>
+                                    <asp:ListItem Selected="False" Enabled="True" Value="CatalogoC"> Catalogo de clientes</asp:ListItem>
                                 </asp:DropDownList>
-                                <br />
-                                <br />
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Finanzas" runat="server" Class="Drop bg-dark text-light">
+                                <asp:DropDownList ID="Finanzas" runat="server" Class="Drop bg-dark text-light mb-5" AutoPostBack="true">
                                     <asp:ListItem Selected="True" disabled="True"> Modulo Finanzas </asp:ListItem>
                                     <asp:ListItem>Pendiente</asp:ListItem>
                                 </asp:DropDownList>
-                                <br />
-                                <br />
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Usuarios" runat="server" Class="Drop bg-dark text-light">
+                                <asp:DropDownList ID="Usuarios" runat="server" Class="Drop bg-dark text-light mb-5" AutoPostBack="true">
                                     <asp:ListItem Selected="True" disabled="True"> Modulo Usuarios </asp:ListItem>
                                     <asp:ListItem>Editar usuarios</asp:ListItem>
                                 </asp:DropDownList>
@@ -99,7 +106,7 @@
             </asp:ContentPlaceHolder>
 
             <%-- Footer  --%>
-            <footer class="container-fluid bg-dark">
+            <footer class="container-fluid bg-dark position-fixed">
                 <div class="row justify-content-between">
 
                     <div class="col-4 ">

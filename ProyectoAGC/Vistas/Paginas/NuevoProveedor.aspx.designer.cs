@@ -51,13 +51,13 @@ namespace ProyectoAGC.Vistas.Paginas
         protected global::System.Web.UI.WebControls.TextBox txtContacto;
 
         /// <summary>
-        /// Control Area.
+        /// Control textCategoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Area;
+        protected global::System.Web.UI.WebControls.TextBox textCategoria;
 
         /// <summary>
         /// Control txtgiro.

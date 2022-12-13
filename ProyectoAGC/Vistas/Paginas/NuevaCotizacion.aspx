@@ -23,10 +23,10 @@
                     </div>
                     <div class="col align-self-center">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-8">
                                 <asp:TextBox ID="textproductp" placeholder="Producto" Class="form-control textProducto" runat="server" TextMode="Search"></asp:TextBox>
                             </div>
-                            <div class="col-5 justify-content-start">
+                            <div class="col-4 justify-content-start">
                                 <asp:ImageButton ID="btnBuscarCliente" Class="Search" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/magnifying-glass-solid.svg" />
                             </div>
                         </div>

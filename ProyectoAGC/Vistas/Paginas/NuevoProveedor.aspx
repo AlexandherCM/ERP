@@ -107,14 +107,11 @@
                 <div class="row g-3 text-center">
 
                     <div class="col-6 align-self-center">
-                        <h3>Área</h3>
+                        <h3>Categoria</h3>
                     </div>
 
                     <div class="col-6 align-self-center text-center">
-                        <asp:DropDownList ID="Area" runat="server" Class="Drop">
-                            <asp:ListItem Selected="True" disabled="True"> Área </asp:ListItem>
-                            <asp:ListItem>Pendiente</asp:ListItem>
-                        </asp:DropDownList>
+                       <asp:TextBox ID="textCategoria" runat="server" Class="TextBox"></asp:TextBox>
                     </div>
 
                 </div>

@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>ProductosCotizados</title>
-    <link href="../Estilos/ProductoCotizados.css" rel="stylesheet" />
+    <link href="../Estilos/productoCotizados.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="Fondo ">

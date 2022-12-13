@@ -27,11 +27,7 @@
 }
 
 
-#mensajes {
-    height: auto;
-}
-
-#TxtProducto, #txtPDesc, #txtPPrecio {
+.txt, Drop {
     width: 85%;
     border: none;
     border-radius: 3px;

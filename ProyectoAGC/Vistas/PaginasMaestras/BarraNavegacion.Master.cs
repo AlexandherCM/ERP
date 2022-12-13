@@ -18,5 +18,15 @@ namespace ProyectoAGC.Vistas.PaginasMaestras
         {
             Response.RedirectToRoute(Ventas.SelectedItem.Value);
         }
+
+        protected void Catalogos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.RedirectToRoute(Catalogos.SelectedItem.Value);
+        }
+        
+        protected void btnInicio_Click(object sender, EventArgs e)
+        {
+            Response.RedirectToRoute("Menu");
+        }
     }
 }
