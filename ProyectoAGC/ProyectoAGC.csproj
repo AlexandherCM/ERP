@@ -119,24 +119,27 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Vistas\Estilos\Clientes.css" />
-    <Content Include="Vistas\Estilos\Cotizaciones.css" />
-    <Content Include="Vistas\Estilos\EstiloMaster.css" />
+    <Content Include="Vistas\Estilos\Catalogos.css" />
+    <Content Include="Vistas\Estilos\clientes.css" />
+    <Content Include="Vistas\Estilos\cotizaciones.css" />
+    <Content Include="Vistas\Estilos\estilosmaster.css" />
     <Content Include="Vistas\Estilos\Login.css" />
     <Content Include="Vistas\Estilos\Men.css" />
     <Content Include="Vistas\Estilos\NCotizacion.css" />
-    <Content Include="Vistas\Estilos\NuevoCliente.css" />
-    <Content Include="Vistas\Estilos\NuevoProducto.css" />
+    <Content Include="Vistas\Estilos\nuevoCliente.css" />
+    <Content Include="Vistas\Estilos\nuevoProducto.css" />
     <Content Include="Vistas\Estilos\NuevoProveedor.css" />
-    <Content Include="Vistas\Estilos\OrdenVenta.css" />
-    <Content Include="Vistas\Estilos\ProductoCotizados.css" />
-    <Content Include="Vistas\Estilos\Productos.css" />
-    <Content Include="Vistas\Estilos\Proveedores.css" />
+    <Content Include="Vistas\Estilos\ordenVenta.css" />
+    <Content Include="Vistas\Estilos\productoCotizados.css" />
+    <Content Include="Vistas\Estilos\producto.css" />
+    <Content Include="Vistas\Estilos\Proveedor.css" />
     <Content Include="Vistas\Estilos\Recursos\arrow-left-solid.svg" />
     <Content Include="Vistas\Estilos\Recursos\brick-wall.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Catalogo.jpg" />
+    <Content Include="Vistas\Estilos\Recursos\chair.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Check.png" />
     <Content Include="Vistas\Estilos\Recursos\circle-plus-solid.svg" />
+    <Content Include="Vistas\Estilos\Recursos\Cliente.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Compras.jpg" />
     <Content Include="Vistas\Estilos\Recursos\download-solid.svg" />
     <Content Include="Vistas\Estilos\Recursos\envelope-regular.svg" />
@@ -155,14 +158,18 @@
     <Content Include="Vistas\Estilos\Recursos\OrdenDeCompra.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Power.png" />
     <Content Include="Vistas\Estilos\Recursos\ProductosF.jpg" />
+    <Content Include="Vistas\Estilos\Recursos\Proveedoor.jpg" />
     <Content Include="Vistas\Estilos\Recursos\table-solid.svg" />
     <Content Include="Vistas\Estilos\Recursos\Users.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Ventas.jpg" />
+    <Content Include="Vistas\Estilos\Recursos\VentasF.jpg" />
+    <Content Include="Vistas\Estilos\Venta.css" />
     <Content Include="Vistas\Login.aspx" />
     <Content Include="Vistas\Logout.aspx" />
-    <Content Include="Vistas\Paginas\CatalogoClinetes.aspx" />
+    <Content Include="Vistas\Paginas\CatalogoClientes.aspx" />
     <Content Include="Vistas\Paginas\CatalogoProductos.aspx" />
     <Content Include="Vistas\Paginas\CatalogoProveedores.aspx" />
+    <Content Include="Vistas\Paginas\Catalogos.aspx" />
     <Content Include="Vistas\Paginas\Cotizaciones.aspx" />
     <Content Include="Vistas\Paginas\Menu.aspx" />
     <Content Include="Vistas\Paginas\NuevaCotizacion.aspx" />
@@ -171,6 +178,7 @@
     <Content Include="Vistas\Paginas\NuevoProveedor.aspx" />
     <Content Include="Vistas\Paginas\OrdenVenta.aspx" />
     <Content Include="Vistas\Paginas\ProductosCotizados.aspx" />
+    <Content Include="Vistas\Paginas\Ventas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -186,11 +194,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211280443348_Migracion1.cs" />
-    <Compile Include="Migrations\202211280443348_Migracion1.designer.cs">
-      <DependentUpon>202211280443348_Migracion1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\CotizacionVenta.cs" />
     <Compile Include="Models\Factura.cs" />
@@ -234,12 +237,12 @@
     <Compile Include="Vistas\PaginasMaestras\Estandar.Master.designer.cs">
       <DependentUpon>Estandar.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoClinetes.aspx.cs">
-      <DependentUpon>CatalogoClinetes.aspx</DependentUpon>
+    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.cs">
+      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoClinetes.aspx.designer.cs">
-      <DependentUpon>CatalogoClinetes.aspx</DependentUpon>
+    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.designer.cs">
+      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Paginas\CatalogoProductos.aspx.cs">
       <DependentUpon>CatalogoProductos.aspx</DependentUpon>
@@ -254,6 +257,13 @@
     </Compile>
     <Compile Include="Vistas\Paginas\CatalogoProveedores.aspx.designer.cs">
       <DependentUpon>CatalogoProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\Catalogos.aspx.cs">
+      <DependentUpon>Catalogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\Catalogos.aspx.designer.cs">
+      <DependentUpon>Catalogos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Paginas\Cotizaciones.aspx.cs">
       <DependentUpon>Cotizaciones.aspx</DependentUpon>
@@ -311,6 +321,13 @@
     <Compile Include="Vistas\Paginas\ProductosCotizados.aspx.designer.cs">
       <DependentUpon>ProductosCotizados.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Paginas\Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -347,11 +364,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211280443348_Migracion1.resx">
-      <DependentUpon>202211280443348_Migracion1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
