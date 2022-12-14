@@ -23,7 +23,7 @@ namespace ProyectoAGC.Vistas.Paginas
         String correcto = @"<script type='text/javascript'>alert('Datos guardados correctamente');</script>";
         String falso = @"<script type='text/javascript'>alert('Ocurrío un error al intentar ingresar el registro');</script>";
 
-        String vacio = @"<script type='text/javascript'>alert('Nose pueden enviar datos vacíos');</script>";
+        //String vacio = @"<script type='text/javascript'>alert('Nose pueden enviar datos vacíos');</script>";
         String Duplicado = @"<script type='text/javascript'>alert('El cliente ingresado ya se encuentra en la base de datos');</script>";
 
         protected void Page_Load(object sender, EventArgs e)

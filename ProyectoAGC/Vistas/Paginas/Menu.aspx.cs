@@ -22,7 +22,20 @@ namespace ProyectoAGC.Vistas.Paginas
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "InicioSesion", mensaje2, false);
             }
         }
-        protected void btnPruebas_Click(object sender, EventArgs e)
+
+        protected void btnVentas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Vistas/Paginas/Ventas.aspx");
+        }
+
+        protected void btnCatalogos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Vistas/Paginas/Catalogos.aspx");
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------------
+
+        protected void btnFinanzas_Click(object sender, EventArgs e)
         {
             peticion.PedirComunicacion("Usuario/Expirar", MetodoHTTP.GET, TipoContenido.JSON, Session["jwt"].ToString());
             String mensaje = peticion.ObtenerJson();
@@ -38,16 +51,6 @@ namespace ProyectoAGC.Vistas.Paginas
             {
                 Response.RedirectToRoute("BorrarJWT");
             }
-        }
-
-        protected void btnVentas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnCatalogos_Click(object sender, EventArgs e)
-        {
-            Response.RedirectToRoute("GuardarCliente");
         }
     }
 }

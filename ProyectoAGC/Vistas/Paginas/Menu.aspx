@@ -80,7 +80,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><b>Finanzas</b></h5>
                             <p class="card-text"></p>
-                            <asp:Button ID="btnFinanzas" runat="server" Text="Ver" class="btn btn-secondary btn-lg" />
+                            <asp:Button ID="btnFinanzas" runat="server" Text="Ver" class="btn btn-secondary btn-lg" OnClick="btnFinanzas_Click" />
                         </div>
                     </div>
                 </div>
